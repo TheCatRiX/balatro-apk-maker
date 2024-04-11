@@ -27,3 +27,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.3.1
+      with:
+        path: D:\a\balatro-apk-maker\balatro-apk-maker\Balatro APK Maker\bin\Debug\Balatro APK Maker.exe
